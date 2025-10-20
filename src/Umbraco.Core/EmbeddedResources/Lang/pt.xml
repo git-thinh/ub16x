@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="pt" intName="Portuguese Brazil" localName="Portuguese Brazil" lcid="" culture="pt-BR">
+  <creator>
+    <name>The Umbraco community</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">Gerenciar hostnames</key>
+    <key alias="auditTrail">Caminho de Auditoria</key>
+    <key alias="browse">Navegar o Nó</key>
+    <key alias="copy">Copiar</key>
+    <key alias="create">Criar</key>
+    <key alias="createPackage">Criar Pacote</key>
+    <key alias="delete">Remover</key>
+    <key alias="disable">Desabilitar</key>
+    <key alias="emptyrecyclebin">Esvaziar Lixeira</key>
+    <key alias="exportDocumentType">Exportar Tipo de Documento</key>
+    <key alias="importdocumenttype">Importar Tipo de Documento</key>
+    <key alias="importPackage">Importar Pacote</key>
+    <key alias="liveEdit">Editar na Tela</key>
+    <key alias="logout">Sair</key>
+    <key alias="move">Mover</key>
+    <key alias="notify">Notificações</key>
+    <key alias="protect">Acesso público</key>
+    <key alias="publish">Publicar</key>
+    <key alias="refreshNode">Recarregar nós</key>
+    <key alias="republish">Republicar site inteiro</key>
+    <key alias="rights">Permissões</key>
+    <key alias="rollback">Reversão</key>
+    <key alias="sendtopublish">Enviar para Publicação</key>
+    <key alias="sendToTranslate">Enviar para Tradução</key>
+    <key alias="sort">Classificar</key>
+    <key alias="translate">Traduzir</key>
+    <key alias="update">Atualizar</key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">Este item não está publicado</key>
+    <key alias="parentNotPublished">Este documento está publicado mas não está visível porque o pai '%0%' não está publicado</key>
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody"><![CDATA[
+ Olá %0%
+
+      Esta é uma mensagem automatizada de email para informar que a tarefa '%1%' foi realizada na página '%2%' pelo usuário '%3%'
+
+Vá até http://%4%/#/content/content/edit/%5% para editar.
+
+      Tenha um bom dia!
+
+      Saudações do robô Umbraco]]></key>
+    <key alias="mailBodyHtml"><![CDATA[<p>Olá %0%</p>
+
+		  <p>Esta é uma mensagem automatizada para informar que a tarefa <strong>'%1%'</strong>
+		  foi completada na página <a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a>
+		  pelo usuário <strong>'%3%'</strong>
+	  </p>
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+		  <p>
+			  <h3>Resumo da Atualização:</h3>
+			  <table style="width: 100%;">
+						   %6%
+				</table>
+			 </p>
+
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+
+		  <p>Tenha um bom dia!<br /><br />
+			  Saudações do robô Umbraco
+		  </p>
+    ]]></key>
+    <key alias="mailSubject">[%0%] Notificação sobre %1% realizada em %2%</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">A confirmação da senha não é igual à nova senha!</key>
+  </area>
+</language>

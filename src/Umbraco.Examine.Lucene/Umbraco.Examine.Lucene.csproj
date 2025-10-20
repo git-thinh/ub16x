@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Umbraco.Cms.Examine.Lucene</PackageId>
+    <Title>Umbraco CMS - Examine - Lucene</Title>
+    <Description>Adds Examine searching support using Lucene to Umbraco CMS.</Description>
+    <RootNamespace>Umbraco.Cms.Infrastructure.Examine</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--
+      TODO: Fix and remove overrides:
+      [CS0618] Handle member obsolete appropriately
+    -->
+    <WarningsNotAsErrors>$(WarningsNotAsErrors),CS0618</WarningsNotAsErrors>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Examine" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Take top-level depedendency on System.Security.Cryptography.Xml, because Examine depends on a vulnerable version -->
+    <PackageReference Include="System.Security.Cryptography.Xml" />
+    <!-- Take top-level depedendency on Lucene.Net.Replicator, because Examine depends on a vulnerable version -->
+    <PackageReference Include="Lucene.Net.Replicator" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Umbraco.Infrastructure\Umbraco.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

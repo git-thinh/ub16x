@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language alias="no" intName="Norwegian" localName="norsk" lcid="20" culture="nb-NO">
+  <creator>
+    <name>The Umbraco community</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">Angi domene</key>
+    <key alias="auditTrail">Revisjoner</key>
+    <key alias="browse">Bla gjennom</key>
+    <key alias="changeDocType">Skift dokumenttype</key>
+    <key alias="copy">Kopier</key>
+    <key alias="create">Opprett</key>
+    <key alias="createPackage">Opprett pakke</key>
+    <key alias="delete">Slett</key>
+    <key alias="disable">Deaktiver</key>
+    <key alias="emptyrecyclebin">Tøm papirkurv</key>
+    <key alias="exportDocumentType">Eksporter dokumenttype</key>
+    <key alias="importdocumenttype">Importer dokumenttype</key>
+    <key alias="importPackage">Importer pakke</key>
+    <key alias="liveEdit">Rediger i Canvas</key>
+    <key alias="logout">Logg av</key>
+    <key alias="move">Flytt</key>
+    <key alias="notify">Varslinger</key>
+    <key alias="protect">Offentlig tilgang</key>
+    <key alias="publish">Publiser</key>
+    <key alias="unpublish">Avpubliser</key>
+    <key alias="refreshNode">Oppdater noder</key>
+    <key alias="republish">Republiser hele siten</key>
+    <key alias="restore" version="7.3.0">Gjenopprett</key>
+    <key alias="rights">Rettigheter</key>
+    <key alias="rollback">Reverser</key>
+    <key alias="sendtopublish">Send til publisering</key>
+    <key alias="sendToTranslate">Send til oversetting</key>
+    <key alias="sort">Sorter</key>
+    <key alias="translate">Oversett</key>
+    <key alias="update">Oppdater</key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">Denne noden er enda ikke publisert</key>
+    <key alias="parentNotPublished">Dette dokumentet er publisert, men ikke synlig ettersom den overliggende siden '%0%' ikke er publisert</key>
+    <key alias="parentNotPublishedAnomaly">Intern feil: dokumentet er publisert men finnes ikke i hurtigbuffer</key>
+  </area>
+  <area alias="member">
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody"><![CDATA[
+Hei %0%
+
+Dette er en automatisk mail for å informere om at handlingen '%1%'
+er utført på siden '%2%'
+av brukeren '%3%'
+
+Gå til http://%4%/Umbraco/default.aspx?section=content&id=%5% for å redigere.
+
+Ha en fin dag!
+
+Vennlig hilsen Umbraco roboten
+    ]]></key>
+    <key alias="mailBodyHtml"><![CDATA[<p>Hei %0%</p>
+
+		  <p>Dette er en automatisk mail for å informere om at handlingen '%1%'
+        er blitt utført på siden <a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a>
+        av brukeren <strong>'%3%'</strong>
+	    </p>
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/Umbraco/actions/editContent.aspx?id=%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REDIGER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+		  <p>
+			  <h3>Rettelser:</h3>
+			  <table style="width: 100%;">
+						   %6%
+				</table>
+			 </p>
+
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/Umbraco/actions/editContent.aspx?id=%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REDIGER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+
+		  <p>Ha en fin dag!<br /><br />
+			  Vennlig hilsen Umbraco roboten
+		  </p>]]></key>
+    <key alias="mailSubject">[%0%] Varsling om %1% utført på %2%</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">Nytt og bekreftet passord må være like</key>
+  </area>
+</language>

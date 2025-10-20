@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="sv" intName="Swedish" localName="Svenska" lcid="29" culture="sv-SE">
+  <creator>
+    <name>The Umbraco community</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">Hantera domännamn</key>
+    <key alias="auditTrail">Hantera versioner</key>
+    <key alias="browse">Surfa på sidan</key>
+    <key alias="changeDocType">Ändra dokumenttyp</key>
+    <key alias="copy">Kopiera</key>
+    <key alias="create">Skapa</key>
+    <key alias="createGroup">Skapa grupp</key>
+    <key alias="createPackage">Skapa paket</key>
+    <key alias="createblueprint">Skapa innehållsmall</key>
+    <key alias="delete">Ta bort</key>
+    <key alias="disable">Avaktivera</key>
+    <key alias="emptyrecyclebin">Töm papperskorgen</key>
+    <key alias="exportDocumentType">Exportera dokumenttyp</key>
+    <key alias="importdocumenttype">Importera dokumenttyp</key>
+    <key alias="importPackage">Importera paket</key>
+    <key alias="liveEdit">Redigera i Canvas</key>
+    <key alias="logout">Logga ut</key>
+    <key alias="move">Flytta</key>
+    <key alias="notify">Meddelanden</key>
+    <key alias="protect">Lösenordsskydd</key>
+    <key alias="publish">Publicera</key>
+    <key alias="refreshNode">Ladda om noder</key>
+    <key alias="republish">Publicera hela webbplatsen</key>
+    <key alias="rights">Rättigheter</key>
+    <key alias="rollback">Ångra ändringar</key>
+    <key alias="sendtopublish">Skicka för publicering</key>
+    <key alias="sendToTranslate">Skicka för översättning</key>
+    <key alias="sort">Sortera</key>
+    <key alias="translate">Översätt</key>
+    <key alias="unpublish">Avpublicera</key>
+    <key alias="update">Uppdatera</key>
+  </area>
+  <area alias="validation">
+    <key alias="entriesShort"><![CDATA[Minsta %0% poster, kräver <strong>%1%</strong> mer.]]></key>
+    <key alias="entriesExceed"><![CDATA[Max %0% poster, <strong>%1%</strong> för många.]]></key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">Detta objekt är inte publicerat</key>
+    <key alias="parentNotPublished">Detta dokument är publicerat men syns inte eftersom den överordnade sidan %0% inte är publicerad</key>
+    <key alias="parentNotPublishedAnomaly">Oops: detta dokument är publicerat men finns inte i cacheminnet (internt fel)</key>
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+  </area>
+  <area alias="member">
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody">Hej %0% Detta mail skickas till dig automatiskt för att meddela att '%1%' har utförts på sidan '%2%' av användaren '%3%' Gå till http://%4%/actions/editContent.aspx?id=%5% för att redigera.</key>
+    <key alias="mailBodyHtml"><![CDATA[<p>Hej %0%</p> <p>Detta mail skickas till dig automatiskt för att meddela att <strong>'%1%'</strong> har utförts på sidan <a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a> av användaren <strong>'%3%'</strong> </p> <div style="margin: 8px 0; padding: 8px; display: block;"> <br /> <a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/actions/editContent.aspx?id=%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp; <br /> </div> <p> <h3>Sammanfattning av uppdateringen:</h3> <table style="width: 100%;"> %6% </table> </p> <div style="margin: 8px 0; padding: 8px; display: block;"> <br /> <a style="color: white; font-weight: bold; background-color: #66cc66; text-decoration : none; margin-right: 20px; border: 8px solid #66cc66; width: 150px;" href="http://%4%/actions/publish.aspx?id=%5%">&nbsp;&nbsp;PUBLICERA&nbsp;&nbsp;</a> &nbsp; <a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/actions/editContent.aspx?id=%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REDIGERA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp; <a style="color: white; font-weight: bold; background-color: #ca4a4a; text-decoration : none; margin-right: 20px; border: 8px solid #ca4a4a; width: 150px;" href="http://%4%/actions/delete.aspx?id=%5%">&nbsp;&nbsp;&nbsp;&nbsp;TA BORT&nbsp;&nbsp;&nbsp;&nbsp;</a> <br /> </div>]]></key>
+    <key alias="mailSubject">[%0%] Meddelande för att informera om att %1% har utförts på %2%</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">Det bekräftade lösenordet matchar inte det nya lösenordet!</key>
+  </area>
+</language>

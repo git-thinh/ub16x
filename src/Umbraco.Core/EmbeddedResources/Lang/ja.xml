@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="ja" intName="Japanese" localName="日本語" lcid="17" culture="ja-JP">
+  <creator>
+    <name>The Umbraco community</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">ドメインの割り当て</key>
+    <key alias="auditTrail">動作記録</key>
+    <key alias="browse">ノードの参照</key>
+    <key alias="changeDocType">ドキュメントタイプの変更</key>
+    <key alias="copy">コピー</key>
+    <key alias="create">新規作成</key>
+    <key alias="createPackage">パッケージの作成</key>
+    <key alias="delete">削除</key>
+    <key alias="disable">無効</key>
+    <key alias="emptyrecyclebin">ごみ箱を空にする</key>
+    <key alias="exportDocumentType">ドキュメントタイプの書出</key>
+    <key alias="importdocumenttype">ドキュメントタイプの読込</key>
+    <key alias="importPackage">パッケージの読み込み</key>
+    <key alias="liveEdit">ライブ編集</key>
+    <key alias="logout">ログアウト</key>
+    <key alias="move">移動</key>
+    <key alias="notify">メール通知</key>
+    <key alias="protect">一般公開</key>
+    <key alias="publish">公開</key>
+    <key alias="unpublish">公開を止める</key>
+    <key alias="refreshNode">最新の情報に更新</key>
+    <key alias="republish">サイトのリフレッシュ</key>
+    <key alias="restore" version="7.3.0">復元</key>
+    <key alias="rights">アクセス権</key>
+    <key alias="rollback">以前の版に戻る</key>
+    <key alias="sendtopublish">公開に送る</key>
+    <key alias="sendToTranslate">翻訳に送る</key>
+    <key alias="sort">並べ替え</key>
+    <key alias="translate">翻訳</key>
+    <key alias="update">更新</key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">このページは公開されていません</key>
+    <key alias="parentNotPublished">このページは公開されましたが、親ページの '%0%' が非公開のため閲覧できません</key>
+    <key alias="parentNotPublishedAnomaly">このコンテントは公開されていますがキャッシュされていません(内部エラー)</key>
+  </area>
+  <area alias="member">
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody"><![CDATA[
+      前略 %0% さま
+
+      ユーザー '%3%' により
+      ページ '%2%' 上のタスク'%1%'から
+      自動的にメールします。
+
+      編集はこちらから: http://%4%/#/content/content/edit/%5%
+
+      早々
+
+      Umbracoのロボットより
+    ]]></key>
+    <key alias="mailBodyHtml"><![CDATA[<p>前略 %0% さま</p>
+
+			<p>ユーザー <strong>'%3%'</strong> によりページ <a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a> 上のタスク <strong>'%1%'</strong> から自動的にメールします。</p>
+			<div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;編集&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+		  <p>
+			  <h3>更新のまとめ:</h3>
+			  <table style="width: 100%;">
+						   %6%
+				</table>
+			 </p>
+
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;編集&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+
+		  <p>早々<br /><br />
+			  Umbracoのロボットより
+		  </p>]]></key>
+    <key alias="mailSubject">[%0%] に通知: ページ %2% 上の %1% について</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">確認のパスワードは新しいパスワードと一致しません!</key>
+  </area>
+  <area alias="validation">
+  </area>
+</language>

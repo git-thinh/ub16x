@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Title>Umbraco CMS - Persistence - Entity Framework Core</Title>
+    <Description>Adds support for Entity Framework Core to Umbraco CMS.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--
+      TODO: Fix and remove overrides:
+      [IDE0270] Simplify null checks
+      [CS0108] resolve hiding inherited members
+      [CS1998] remove async or make method synchronous
+    -->
+    <WarningsNotAsErrors>$(WarningsNotAsErrors),IDE0270,CS0108,CS1998</WarningsNotAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Take top-level depedendency on Microsoft.Extensions.Caching.Memory, because Microsoft.EntityFrameworkCore.* depends on a vulnerable version -->
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="OpenIddict.EntityFrameworkCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Take top-level depedendency on Azure.Identity, because Microsoft.EntityFrameworkCore.SqlServer depends on a vulnerable version -->
+    <PackageReference Include="Azure.Identity" />
+    <!-- Take top-level depedendency on System.Runtime.Caching, because Microsoft.EntityFrameworkCore.SqlServer depends on a vulnerable version -->
+    <PackageReference Include="System.Runtime.Caching" />
+    <!-- Take top-level depedendency on System.Text.Encodings.Web, because Microsoft.EntityFrameworkCore.SqlServer brings in a legacy version -->
+    <PackageReference Include="System.Text.Encodings.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Umbraco.Core\Umbraco.Core.csproj" />
+    <ProjectReference Include="..\Umbraco.Infrastructure\Umbraco.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Umbraco.Tests.Integration</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="ko" intName="Korean" localName="한국어" lcid="18" culture="ko-KR">
+  <creator>
+    <name>The Umbraco community</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">호스트명 관리</key>
+    <key alias="auditTrail">감사 추적</key>
+    <key alias="browse">노드 탐색</key>
+    <key alias="copy">복사</key>
+    <key alias="create">새로 만들기</key>
+    <key alias="createPackage">패키지 새로 만들기</key>
+    <key alias="delete">삭제</key>
+    <key alias="disable">비활성</key>
+    <key alias="emptyrecyclebin">휴지통 비우기</key>
+    <key alias="exportDocumentType">추출 문서 유형</key>
+    <key alias="importdocumenttype">등록 문서 유형</key>
+    <key alias="importPackage">패키지 등록</key>
+    <key alias="liveEdit">캔버스 내용 편집</key>
+    <key alias="logout">종료</key>
+    <key alias="move">이동</key>
+    <key alias="notify">알림</key>
+    <key alias="protect">퍼블릭 접근</key>
+    <key alias="publish">발행</key>
+    <key alias="refreshNode">노드 새로 고침</key>
+    <key alias="republish">전체 사이트 재발행</key>
+    <key alias="rights">권한</key>
+    <key alias="rollback">롤백</key>
+    <key alias="sendtopublish">발행 항목으로 전달</key>
+    <key alias="sendToTranslate">번역 항목으로 전달</key>
+    <key alias="sort">정렬</key>
+    <key alias="translate">번역</key>
+    <key alias="update">업데이트</key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">이 항목은 발행되지 않았습니다.</key>
+    <key alias="parentNotPublished">이문서는 발행되었지만 부모문서 '%0%'가 발행되지 않아 볼 수 없습니다.</key>
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody"><![CDATA[
+      안녕하세요 %0%
+
+      사용자 '%3%' 가  작업 '%1%' 를 페이지 '%2%' 에서
+      진행했음을 알리는 자동 발송 메일입니다.
+
+      편집하시려면 http://%4%/#/content/content/edit/%5% 로 이동하세요
+
+      좋은 하루 되세요!
+
+    ]]></key>
+    <key alias="mailBodyHtml"><![CDATA[<p>안녕하세요 %0%</p>
+
+	  <p>사용자 <strong>'%3%'</strong> 가  작업 <strong>'%1%'</strong> 를
+       페이지 <a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a> 에서
+       진행했음을 알리는 자동 발송 메일입니다.
+  </p>
+	  <div style="margin: 8px 0; padding: 8px; display: block;">
+			<br />
+			<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;편집&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+			<br />
+	  </div>
+	  <p>
+		  <h3>업데이트 요약:</h3>
+		  <table style="width: 100%;">
+					   %6%
+			</table>
+		 </p>
+
+	  <div style="margin: 8px 0; padding: 8px; display: block;">
+			<br />
+			<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;편집&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+			<br />
+	  </div>
+
+	  <p>좋은 하루 되세요!<br /><br />
+	  </p>]]></key>
+    <key alias="mailSubject">%1%에 대한 [%0]알림이 %2%에 생성되었습니다</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">The confirmed password doesn't match the new password!</key>
+  </area>
+</language>

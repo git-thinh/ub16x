@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="zh" intName="Chinese (Simple)" localName="中文（简体，中国）" lcid="0804" culture="zh-CN">
+  <creator>
+    <name>黄仁祥(wanddy@163.com)</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">管理主机名</key>
+    <key alias="auditTrail">跟踪审计</key>
+    <key alias="browse">浏览节点</key>
+    <key alias="changeDocType">改变文档类型</key>
+    <key alias="copy">复制</key>
+    <key alias="create">创建</key>
+    <key alias="createPackage">创建扩展包</key>
+    <key alias="delete">删除</key>
+    <key alias="disable">禁用</key>
+    <key alias="emptyrecyclebin">清空回收站</key>
+    <key alias="exportDocumentType">导出文档类型</key>
+    <key alias="importdocumenttype">导入文档类型</key>
+    <key alias="importPackage">导入扩展包</key>
+    <key alias="liveEdit">实时编辑模式</key>
+    <key alias="logout">退出</key>
+    <key alias="move">移动</key>
+    <key alias="notify">提醒</key>
+    <key alias="protect">公众访问权限</key>
+    <key alias="publish">发布</key>
+    <key alias="unpublish">取消发布</key>
+    <key alias="refreshNode">重新加载节点</key>
+    <key alias="republish">重新发布整站</key>
+    <key alias="restore" version="7.3.0">恢复</key>
+    <key alias="chooseWhereToMove">选择移动目的地</key>
+    <key alias="toInTheTreeStructureBelow">到下列的树结构中</key>
+    <key alias="rights">权限</key>
+    <key alias="rollback">回滚</key>
+    <key alias="sendtopublish">提交至发布者</key>
+    <key alias="sendToTranslate">发送给翻译</key>
+    <key alias="sort">排序</key>
+    <key alias="translate">翻译</key>
+    <key alias="update">更新</key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">该项没有发布</key>
+    <key alias="parentNotPublished">该文档不可见，因为其上级 '%0%' 未发布。</key>
+    <key alias="parentNotPublishedAnomaly">该文档已发布，但是没有更新至缓存（内部错误）</key>
+    <key alias="getUrlException">Could not get the URL</key>
+    <key alias="routeError">This document is published but its URL would collide with content %0%</key>
+  </area>
+  <area alias="member">
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+    <key alias="resetCodeExpired">您单击的链接无效或已过期</key>
+    <key alias="resetPasswordEmailCopySubject">Umbraco: 重置密码</key>
+    <key alias="resetPasswordEmailCopyFormat"><![CDATA[<p>您的用户名登录到 Umbraco 后台是: <strong>%0%</strong></p><p>点击 <a href="%1%"><strong>这里</strong></a> 重置密码，或复制链接粘贴到您的浏览器访问:</p><p><em>%1%</em></p>]]></key>
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody"><![CDATA[
+%0%：
+
+  您好！这是一封自动邮件，提醒您用户'%3%'
+  执行'%1%'任务
+  已经在完成'%2%'。
+
+      转到 http://%4%/#/content/content/edit/%5% 进行编辑
+
+      Have a nice day!
+
+      来自Umbraco机器人
+    ]]></key>
+    <key alias="mailBodyHtml"><![CDATA[<p>%0%：</p>
+
+		  <p>您好！这是一封自动发送的邮件，告诉您任务<strong>'%1%'</strong>
+		  已在<a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a>
+		  被用户<strong>'%3%'</strong>执行
+		  </p>
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编辑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+		  <p>
+                          <h3>更新概况：</h3>
+			  <table style="width: 100%;">
+						   %6%
+				</table>
+			 </p>
+
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+                                <a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编辑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+                                <br />
+                  </div>
+
+                  <p>祝您愉快！<br /><br />
+                          该信息由系统自动发送
+                  </p>]]></key>
+    <key alias="mailSubject">在 %2%，[%0%] 关于 %1% 的通告已执行。</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">重输的密码和原密码不一致！</key>
+  </area>
+  <area alias="validation">
+  </area>
+  <area alias="healthcheck">
+    <!-- The following keys get these tokens passed in:
+	     0: Current value
+		   1: Recommended value
+		   2: XPath
+		   3: Configuration file path
+	  -->
+    <key alias="checkSuccessMessage">Value is set to the recommended value: '%0%'.</key>
+    <key alias="checkErrorMessageDifferentExpectedValue">Expected value '%1%' for '%2%' in configuration file '%3%', but found '%0%'.</key>
+    <key alias="checkErrorMessageUnexpectedValue">Found unexpected value '%0%' for '%2%' in configuration file '%3%'.</key>
+    <!-- The following keys get these tokens passed in:
+	     0: Current value
+		   1: Recommended value
+	  -->
+    <!-- The following keys get these tokens passed in:
+	     0: Current value
+		   1: Recommended value
+		   2: Server version
+	  -->
+    <!-- The following keys get predefined tokens passed in that are not all the same, like above -->
+    <key alias="httpsCheckValidCertificate">Your site certificate was marked as valid.</key>
+    <key alias="httpsCheckInvalidCertificate">Certificate validation error: '%0%'</key>
+    <key alias="healthCheckInvalidUrl">Error pinging the URL %0% - '%1%'</key>
+    <key alias="httpsCheckIsCurrentSchemeHttps">You are currently %0% viewing the site using the HTTPS scheme.</key>
+    <!-- The following keys don't get tokens passed in -->
+    <key alias="compilationDebugCheckSuccessMessage">Debug compilation mode is disabled.</key>
+    <key alias="compilationDebugCheckErrorMessage">Debug compilation mode is currently enabled. It is recommended to disable this setting before go live.</key>
+    <!-- The following keys get these tokens passed in:
+	    0: Comma delimitted list of failed folder paths
+  	-->
+    <!-- The following keys get these tokens passed in:
+	    0: Path to the file not found
+  	-->
+    <!-- The following keys get these tokens passed in:
+	    0: Comma delimitted list of failed folder paths
+  	-->
+    <!-- The following key get these tokens passed in:
+	    0: Comma delimitted list of headers found
+  	-->
+    <key alias="excessiveHeadersFound"><![CDATA[The following headers revealing information about the website technology were found: <strong>%0%</strong>.]]></key>
+    <key alias="excessiveHeadersNotFound">No headers revealing information about the website technology were found.</key>
+    <key alias="smtpMailSettingsConnectionSuccess">SMTP settings are configured correctly and the service is operating as expected.</key>
+    <key alias="notificationEmailsCheckSuccessMessage"><![CDATA[Notification email has been set to <strong>%0%</strong>.]]></key>
+    <key alias="notificationEmailsCheckErrorMessage"><![CDATA[Notification email is still set to the default value of <strong>%0%</strong>.]]></key>
+  </area>
+</language>

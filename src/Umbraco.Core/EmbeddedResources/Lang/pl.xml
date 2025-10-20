@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="pl" intName="Polish" localName="polski" lcid="21" culture="pl-PL">
+  <creator>
+    <name>The Umbraco community</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">Zarządzanie hostami</key>
+    <key alias="auditTrail">Historia zmian</key>
+    <key alias="browse">Przeglądaj węzeł</key>
+    <key alias="changeDocType">Zmień typ dokumentu</key>
+    <key alias="copy">Kopiuj</key>
+    <key alias="create">Utwórz</key>
+    <key alias="createPackage">Stwórz zbiór</key>
+    <key alias="createGroup">Stwórz grupę</key>
+    <key alias="delete">Usuń</key>
+    <key alias="disable">Deaktywuj</key>
+    <key alias="emptyrecyclebin">Opróżnij kosz</key>
+    <key alias="enable">Aktywuj</key>
+    <key alias="exportDocumentType">Eksportuj typ dokumentu</key>
+    <key alias="importdocumenttype">Importuj typ dokumentu</key>
+    <key alias="importPackage">Importuj zbiór</key>
+    <key alias="liveEdit">Edytuj na stronie</key>
+    <key alias="logout">Wyjście</key>
+    <key alias="move">Przenieś</key>
+    <key alias="notify">Powiadomienia</key>
+    <key alias="protect">Publiczny dostęp</key>
+    <key alias="publish">Opublikuj</key>
+    <key alias="unpublish">Cofnij publikację</key>
+    <key alias="refreshNode">Odśwież węzeł</key>
+    <key alias="republish">Opublikuj ponownie całą stronę</key>
+    <key alias="rename" version="7.3.0">Zmień nazwę</key>
+    <key alias="restore" version="7.3.0">Przywróć</key>
+    <key alias="chooseWhereToMove">Wybierz dokąd przenieść</key>
+    <key alias="toInTheTreeStructureBelow">W strukturze drzewa poniżej</key>
+    <key alias="rights">Uprawnienia</key>
+    <key alias="rollback">Cofnij</key>
+    <key alias="sendtopublish">Wyślij do publikacji</key>
+    <key alias="sendToTranslate">Wyślij do tłumaczenia</key>
+    <key alias="setGroup">Ustaw grupę</key>
+    <key alias="sort">Sortuj</key>
+    <key alias="translate">Przetłumacz</key>
+    <key alias="update">Aktualizuj</key>
+    <key alias="setPermissions">Ustaw uprawnienia</key>
+    <key alias="unlock">Odblokuj</key>
+    <key alias="createblueprint">Stwórz Szablon Zawartości</key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">Element nie jest opublikowany</key>
+    <key alias="parentNotPublished">Ten dokument jest opublikowany, ale jest niewidoczny, ponieważ jego rodzic '%0%' nie jest opublikowany</key>
+    <key alias="parentNotPublishedAnomaly">Ten dokument jest opublikowany, ale nie jest w cache.</key>
+    <key alias="getUrlException">Nie znaleziono URL</key>
+    <key alias="routeError">Ten dokument jest opublikowany ale jego URL kolidowałby z elementem treści %0%</key>
+  </area>
+  <area alias="member">
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+    <key alias="resetCodeExpired">Link, na który kliknąłeś jest niewłaściwy lub wygasł</key>
+    <key alias="resetPasswordEmailCopySubject">Umbraco: Resetowanie hasła</key>
+    <key alias="resetPasswordEmailCopyFormat"><![CDATA[<p>Twoja nazwa użytkownika do zalogowania się w Umbraco backoffice to: <strong>%0%</strong></p><p>Kliknij <a href="%1%"><strong>tutaj</strong></a>, aby zresetować Twoje hasło lub kopiuj/wklej ten URL w przeglądarce:</p><p><em>%1%</em></p>]]></key>
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody"><![CDATA[
+                Witaj %0%
+
+                To jest automatyczny e-mail, wysłany, aby poinformować Cię, że polecenie '%1%'
+                zostało wykonane na stronie '%2%'
+                przez użytkownika '%3%'.
+
+                Możesz dalej edytować pod adresem http://%4%/#/content/content/edit/%5%
+
+                Miłego dnia!
+
+                Pozdrowienia od robota Umbraco
+          ]]></key>
+    <key alias="mailBodyHtml"><![CDATA[<p>Witaj %0%</p>
+
+              <p>To jest automatyczny e-mail, wysłany, aby poinformować Cię, że polecenie <strong>'%1%'</strong>
+              zostało wykonane na stronie <a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a>
+              przez użytkownika <strong>'%3%'</strong>
+              </p>
+              <div style="margin: 8px 0; padding: 8px; display: block;">
+                <br />
+                <a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDYTUJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+                <br />
+              </div>
+              <p>
+                <h3>Podsumowanie zmian:</h3>
+                <table style="width: 100%;">
+                    %6%
+                </table>
+              </p>
+
+              <div style="margin: 8px 0; padding: 8px; display: block;">
+                <br />
+                <a style="color: white; font-weight: bold; background-color: #66cc66; text-decoration : none; margin-right: 20px; border: 8px solid #66cc66; width: 150px;" href="http://%4%/actions/publish.aspx?id=%5%">&nbsp;&nbsp;PUBLIKUJ&nbsp;&nbsp;</a> &nbsp; <a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDYTUJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp; <a style="color: white; font-weight: bold; background-color: #ca4a4a; text-decoration : none; margin-right: 20px; border: 8px solid #ca4a4a; width: 150px;" href="http://%4%/actions/delete.aspx?id=%5%">&nbsp;&nbsp;&nbsp;&nbsp;USUŃ&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <br />
+              </div>
+
+              <p>Miłego dnia!<br /><br />
+                Pozdrowienia od robota Umbraco
+              </p>]]></key>
+    <key alias="mailSubject">[%0%] Powiadomienie o %1% wykonane na %2%</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">Potwierdzone hasło nie jest identyczne z nowym hasłem!</key>
+  </area>
+  <area alias="validation">
+    <key alias="invalidEmail">Niepoprawny e-mail</key>
+  </area>
+  <area alias="healthcheck">
+    <!-- Następujące klucze spowodują, że tokeny zostaną przekazane:
+	     0: Bieżąca wartość
+		   1: Rekomendowana wartość
+		   2: XPath
+		   3: Ścieżka pliku konfiguracyjnego
+	  -->
+    <key alias="checkSuccessMessage">Wartość jest ustawiona na rekomendowaną wartość: '%0%'.</key>
+    <key alias="checkErrorMessageDifferentExpectedValue">Oczekiwana jest wartość '%1%' dla '%2%' w pliku konfiguracyjnym '%3%', ale znaleziono '%0%'.</key>
+    <key alias="checkErrorMessageUnexpectedValue">Znaleziono nieoczekiwaną wartość '%0%' dla '%2%' w pliku konfiguracyjnym '%3%'.</key>
+    <!-- Następujące klucze spowodują, że tokeny zostaną przekazane:
+	     0: Bieżąca wartość
+		   1: Rekomendowana wartość
+	  -->
+    <!-- Następujące klucze spowodują, że tokeny zostaną przekazane:
+	     0: Bieżąca wartość
+		   1: Rekomendowana wartość
+		   2: Wersja serwera
+	  -->
+    <!-- Następujące klucze przekazują predefiniowane tokeny, nie wszystkie są identyczne jak powyżej -->
+    <key alias="httpsCheckValidCertificate">Certifikat Twojej strony jest poprawny.</key>
+    <key alias="httpsCheckInvalidCertificate">Błąd walidacji certyfikatu: '%0%'</key>
+    <key alias="httpsCheckExpiredCertificate">Certyfikat SSL Twojej strony wygasł.</key>
+    <key alias="httpsCheckExpiringCertificate">Certyfikat SSL Twojej strony wygaśnie za %0% dni.</key>
+    <key alias="healthCheckInvalidUrl">Błąd pingowania adresu URL %0% - '%1%'</key>
+    <key alias="httpsCheckIsCurrentSchemeHttps">Oglądasz %0% stronę używając HTTPS.</key>
+    <!-- Następujące klucze nie mają przekazanych tokenów -->
+    <key alias="compilationDebugCheckSuccessMessage">Tryb kompilacji debugowania jest wyłączony.</key>
+    <key alias="compilationDebugCheckErrorMessage">Tryb kompilacji debugowania jest obecnie włączony. Zaleca się wyłączenie tego ustawienia przed wypuszczeniem strony na produkcję.</key>
+    <!-- Następujące klucze spowodują, że tokeny zostaną przekazane:
+	    0: Lista uszkodzonych ścieżek folderów oddzielonych przecinkami
+  	-->
+    <!-- Następujące klucze spowodują, że tokeny zostaną przekazane:
+	    0: Lista uszkodzonych ścieżek folderów oddzielonych przecinkami
+  	-->
+    <!-- Następujące klucze spowodują, że tokeny zostaną przekazane:
+	    0: Lista znalezionych nagłówków, oddzielonych przecinkami
+  	-->
+    <key alias="clickJackingCheckHeaderFound"><![CDATA[Nagłówek lub meta-tag <strong>X-Frame-Options</strong> używany do kontrolowania czy strona może być IFRAME'owana przez inną został znaleziony.]]></key>
+    <key alias="clickJackingCheckHeaderNotFound"><![CDATA[Nagłówek lub meta-tag <strong>X-Frame-Options</strong> używany do kontrolowania czy strona może być IFRAME'owana przez inną nie został znaleziony.]]></key>
+    <key alias="excessiveHeadersFound"><![CDATA[Znaleziono następujące nagłówki, ujawniające informacje o technologii strony: <strong>%0%</strong>.]]></key>
+    <key alias="excessiveHeadersNotFound">Nie znaleziono żadnych nagłówków, ujawniających informacji o technologii strony.</key>
+    <key alias="smtpMailSettingsConnectionSuccess">Ustawienia SMTP są skonfigurowane poprawnie i serwis działa według oczekiwań.</key>
+    <key alias="notificationEmailsCheckSuccessMessage"><![CDATA[E-mail z powiadomieniem został wysłany do <strong>%0%</strong>.]]></key>
+    <key alias="notificationEmailsCheckErrorMessage"><![CDATA[E-mail do powiadomień jest nadal ustawiony na domyślną wartość <strong>%0%</strong>.]]></key>
+  </area>
+</language>

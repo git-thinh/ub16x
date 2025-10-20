@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="he" intName="Hebrew (Israel)" localName="Hebrew" lcid="" culture="he-IL">
+  <creator>
+    <name>The Umbraco community</name>
+    <link>https://docs.umbraco.com/umbraco-cms/extending/language-files</link>
+  </creator>
+  <area alias="actions">
+    <key alias="assigndomain">נהל שמות מתחם</key>
+    <key alias="auditTrail">מעקב ביקורות</key>
+    <key alias="browse">צפה בתוכן</key>
+    <key alias="copy">העתק</key>
+    <key alias="create">צור</key>
+    <key alias="createPackage">צור חבילה</key>
+    <key alias="delete">מחק</key>
+    <key alias="disable">נטרל</key>
+    <key alias="emptyrecyclebin">רוקן סל מיחזור</key>
+    <key alias="exportDocumentType">ייצא סוג קובץ</key>
+    <key alias="importdocumenttype">ייבא סוג מסמך</key>
+    <key alias="importPackage">ייבא חבילה</key>
+    <key alias="liveEdit">ערוך במצב "קנבס"</key>
+    <key alias="logout">יציאה</key>
+    <key alias="move">הזז</key>
+    <key alias="notify">התראות</key>
+    <key alias="protect">גישה ציבורית</key>
+    <key alias="publish">פרסם</key>
+    <key alias="refreshNode">רענן פריטי תוכן</key>
+    <key alias="republish">פרסם את כל האתר מחדש</key>
+    <key alias="rights">הרשאות</key>
+    <key alias="rollback">חזור לאחור</key>
+    <key alias="sendtopublish">שלח לפירסום</key>
+    <key alias="sendToTranslate">שלח לתירגום</key>
+    <key alias="sort">מיין</key>
+    <key alias="translate">תרגם</key>
+    <key alias="update">עדכן</key>
+  </area>
+  <area alias="content">
+    <key alias="itemNotPublished">פריט זה לא פורסם</key>
+    <key alias="parentNotPublished">מסמך זה פורסם אך לא זמין לצפיה, עקב כך שמסמך האב '%0%' ממתין לפירסום</key>
+  </area>
+  <area alias="errors">
+  </area>
+  <area alias="login">
+  </area>
+  <area alias="notifications">
+    <key alias="mailBody"><![CDATA[
+      שלום, %0%
+
+      זוהי הודעה אוטומטית המיידעת אותך שהמשימה %1%
+	  בוצעה בעמוד %2% על ידי המשתמש %3%
+
+      לעריכה, יש ללחוץ על הלינק הבא://%4%/actions/editContent.aspx?id=%5% .
+
+      המשך יום נעים!
+    ]]></key>
+    <key alias="mailBodyHtml"><![CDATA[<p>Hi %0%</p>
+
+		  <p>This is an automated mail to inform you that the task <strong>'%1%'</strong>
+		  has been performed on the page <a href="http://%4%/actions/preview.aspx?id=%5%"><strong>'%2%'</strong></a>
+		  by the user <strong>'%3%'</strong>
+	  </p>
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+		  <p>
+			  <h3>Update summary:</h3>
+			  <table style="width: 100%;">
+						   %6%
+				</table>
+			 </p>
+
+		  <div style="margin: 8px 0; padding: 8px; display: block;">
+				<br />
+				<a style="color: white; font-weight: bold; background-color: #5372c3; text-decoration : none; margin-right: 20px; border: 8px solid #5372c3; width: 150px;" href="http://%4%/#/content/content/edit/%5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> &nbsp;
+				<br />
+		  </div>
+
+		  <p>Have a nice day!<br /><br />
+			  Cheers from the Umbraco robot
+		  </p>]]></key>
+    <key alias="mailSubject">[%0%] התראות  %1% בוצעו ב %2%</key>
+  </area>
+  <area alias="user">
+    <key alias="passwordMismatch">אישור סיסמה לא תואם !</key>
+  </area>
+</language>
