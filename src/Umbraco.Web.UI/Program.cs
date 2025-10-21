@@ -1,3 +1,4 @@
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder()
@@ -6,9 +7,6 @@ builder.CreateUmbracoBuilder()
 
     .AddDeliveryApi()
 
-#if UseDeliveryApi
-    .AddDeliveryApi()
-#endif
     .AddComposers()
     .Build();
 
@@ -25,6 +23,9 @@ app.UseUmbraco()
     {
         u.UseBackOffice();
         u.UseWebsite();
+
+        
+
     })
     .WithEndpoints(u =>
     {
