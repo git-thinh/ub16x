@@ -24,7 +24,8 @@
 
   <ItemGroup>
     <!-- Add design/build time support for EF Core migrations -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="17.8.43" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" Version="9.0.10" />
   </ItemGroup>
 
   <ItemGroup>
