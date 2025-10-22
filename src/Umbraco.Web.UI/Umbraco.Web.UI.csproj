@@ -24,17 +24,13 @@
 
   <ItemGroup>
     <!-- Add design/build time support for EF Core migrations -->
-    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="17.14.28" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <!-- Ensure the AppLocalIcu setting is the same as the referenced ICU package version and changes are also done to the template project! -->
     <!-- Opt-in to app-local ICU to ensure consistent globalization APIs across different platforms -->
     <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="72.1.0.3" />
-    <PackageReference Include="TinyMCE.Umbraco" Version="16.2.0" />
-    <PackageReference Include="Umbraco.Community.DeliveryApiExtensions" Version="16.0.1" />
-    <PackageReference Include="Umbraco.TheStarterKit" Version="16.0.0" />
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="72.1.0.3" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
   </ItemGroup>
 
@@ -47,13 +43,16 @@
     <!-- Remove RazorCompileOnBuild and RazorCompileOnPublish when not using ModelsMode InMemoryAuto -->
     <RazorCompileOnBuild>false</RazorCompileOnBuild>
     <RazorCompileOnPublish>false</RazorCompileOnPublish>
-    <UserSecretsId>6d8d07ea-b4fd-41be-a629-9ce877eab655</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="umbraco\UmbracoInstall\Index.cshtml" />
     <_ContentIncludedByDefault Remove="umbraco\UmbracoLogin\Index.cshtml" />
     <_ContentIncludedByDefault Remove="umbraco\UmbracoBackOffice\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Web.config" />
   </ItemGroup>
 
   <Target Name="CopyAppsettingsTemplate" BeforeTargets="Build" Condition="!Exists('appsettings.json')">

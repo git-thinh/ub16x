@@ -61,6 +61,7 @@ tools/docfx/
 /build/docs.zip
 /build/ui-docs.zip
 /build/csharp-docs.zip
+
 /src/Umbraco.Cms.StaticAssets/wwwroot/umbraco/auth
 /src/Umbraco.Cms.StaticAssets/wwwroot/umbraco/backoffice
 /src/Umbraco.Cms.StaticAssets/wwwroot/umbraco/assets
@@ -71,18 +72,21 @@ tools/docfx/
 
 # Environment specific data
 /src/Umbraco.Web.UI/wwwroot/[Mm]edia/
-/src/Umbraco.Web.UI/App_Code/
-/src/Umbraco.Web.UI/App_Plugins/
+#/src/Umbraco.Web.UI/App_Code/
+#/src/Umbraco.Web.UI/App_Plugins/
 /src/Umbraco.Web.UI/[Uu]mbraco/[Dd]ata/
 /src/Umbraco.Web.UI/[Uu]mbraco/[Ll]ogs/
 /src/Umbraco.Web.UI/[Uu]mbraco/[Mm]odels/
-/src/Umbraco.Web.UI/Views/
-!/src/Umbraco.Web.UI/Views/Partials/blocklist/
-!/src/Umbraco.Web.UI/Views/Partials/grid/
-!/src/Umbraco.Web.UI/Views/_ViewImports.cshtml
-/src/Umbraco.Web.UI/appsettings.json
-/src/Umbraco.Web.UI/appsettings.Development.json
-/src/Umbraco.Web.UI/appsettings.Local.json
+#/src/Umbraco.Web.UI/Views/
+#!/src/Umbraco.Web.UI/Views/Partials/blocklist/
+#!/src/Umbraco.Web.UI/Views/Partials/grid/
+#!/src/Umbraco.Web.UI/Views/_ViewImports.cshtml
+#/src/Umbraco.Web.UI/appsettings.json
+#/src/Umbraco.Web.UI/appsettings.Development.json
+#/src/Umbraco.Web.UI/appsettings.Local.json
+#/src/Umbraco.Web.UI/appsettings-schema.json
+#/src/Umbraco.Web.UI/appsettings-schema.*.json
+#/src/Umbraco.Web.UI/umbraco-package-schema.json
 
 # Tests
 /tests/Umbraco.Tests.AcceptanceTest/.env
@@ -100,12 +104,12 @@ tools/docfx/
 /src/Umbraco.Cms.Targets/tasks/
 /src/Umbraco.Cms.Targets/appsettings-schema.*.json
 /src/Umbraco.Cms.Targets/umbraco-package-schema.json
-/src/Umbraco.Web.UI/appsettings-schema.json
-/src/Umbraco.Web.UI/appsettings-schema.*.json
-/src/Umbraco.Web.UI/umbraco-package-schema.json
+
 /tests/Umbraco.Tests.Integration/appsettings-schema.json
 /tests/Umbraco.Tests.Integration/appsettings-schema.*.json
 /tests/Umbraco.Tests.Integration/umbraco-package-schema.json
+
 /src/Umbraco.Cms/appsettings-schema.json
+
 playwright-report
 trace.zip
