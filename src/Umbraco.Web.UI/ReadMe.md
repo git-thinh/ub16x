@@ -10,3 +10,5 @@ mysql://avnadmin:AVNS_3ad4oIULj4iDBN_1fyo@mysql-eec9830-thinhifis-c8ca.g.aivencl
 Umbraco.Community.DeliveryApiExtensions
 Umbraco.Community.WysiwgUmbracoCommunityExtensions
 Umbraco.TheStarterKit
+
+Umbraco.Forms

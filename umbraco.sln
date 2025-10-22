@@ -137,8 +137,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{20CE9C97-9314-4A19-BCF1-D12CF49B7205}"
 	ProjectSection(SolutionItems) = preProject
 		build\azure-pipelines.yml = build\azure-pipelines.yml
-		build\templates\backoffice-install.yml = build\templates\backoffice-install.yml
 		build\nightly-build-trigger.yml = build\nightly-build-trigger.yml
+		build\templates\backoffice-install.yml = build\templates\backoffice-install.yml
 		build\nightly-E2E-test-pipelines.yml = build\nightly-E2E-test-pipelines.yml
 	EndProjectSection
 EndProject
@@ -196,10 +196,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nightly-e2e-templates", "ni
 		build\nightly-E2E-run-tests-template.yml = build\nightly-E2E-run-tests-template.yml
 		build\nightly-E2E-setup-template.yml = build\nightly-E2E-setup-template.yml
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Cms.Persistence.EFCore.MySql", "src\Umbraco.Cms.Persistence.EFCore.MySql\Umbraco.Cms.Persistence.EFCore.MySql.csproj", "{85E8F0E1-AC74-729D-2587-A4AEEE225FEB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Cms.Persistence.MySql", "src\Umbraco.Cms.Persistence.MySql\Umbraco.Cms.Persistence.MySql.csproj", "{52202B2C-1FD3-5F0E-3C59-BAD5D3467B81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -375,18 +371,6 @@ Global
 		{CB0B9817-EDBC-4D6D-B4D2-969019C4606D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB0B9817-EDBC-4D6D-B4D2-969019C4606D}.SkipTests|Any CPU.ActiveCfg = Debug|Any CPU
 		{CB0B9817-EDBC-4D6D-B4D2-969019C4606D}.SkipTests|Any CPU.Build.0 = Debug|Any CPU
-		{85E8F0E1-AC74-729D-2587-A4AEEE225FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85E8F0E1-AC74-729D-2587-A4AEEE225FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85E8F0E1-AC74-729D-2587-A4AEEE225FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85E8F0E1-AC74-729D-2587-A4AEEE225FEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85E8F0E1-AC74-729D-2587-A4AEEE225FEB}.SkipTests|Any CPU.ActiveCfg = Release|Any CPU
-		{85E8F0E1-AC74-729D-2587-A4AEEE225FEB}.SkipTests|Any CPU.Build.0 = Release|Any CPU
-		{52202B2C-1FD3-5F0E-3C59-BAD5D3467B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52202B2C-1FD3-5F0E-3C59-BAD5D3467B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52202B2C-1FD3-5F0E-3C59-BAD5D3467B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52202B2C-1FD3-5F0E-3C59-BAD5D3467B81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52202B2C-1FD3-5F0E-3C59-BAD5D3467B81}.SkipTests|Any CPU.ActiveCfg = Release|Any CPU
-		{52202B2C-1FD3-5F0E-3C59-BAD5D3467B81}.SkipTests|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
